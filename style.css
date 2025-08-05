@@ -20,7 +20,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg2);
   color: #fff;
-  min-height: 5000px;
+  /* min-height: 5000px; */
 }
 
 .navbar {
@@ -304,4 +304,69 @@ body {
   background-color: var(--text);
 }
 
+/* Footer */
+.footer {
+  margin-top: 25vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg2);
+  color: var(--text);
+  background-color: var(--bg2);
+  padding: 60px 20px 40px;
+  position: relative;
+}
 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 7rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column .logo {
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column p,
+.footer-column a {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-column i {
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-bottom a {
+  color: var(--text);
+  text-decoration: none;
+}
