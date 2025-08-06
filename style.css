@@ -20,6 +20,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg2);
   color: #fff;
+  background-image: url(img/body-bg.jpg);
+  background-attachment: fixed;
   /* min-height: 5000px; */
 }
 
@@ -36,7 +38,7 @@ body {
   left: 0;
   right: 0;
   z-index: 9999;
-  /* background: linear-gradient(to top, #e8e8e800, #e8e8e8 80%); */
+  background: linear-gradient(to top, #e8e8e800, #e8e8e8 80%);
 }
 
 .navbar img {
@@ -262,7 +264,7 @@ body {
 /* location Section */
 
 .location {
-  background-color: var(--bg2);
+  /* background-color: #e8e8e850; */
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -291,7 +293,7 @@ body {
 
 .location .btn {
   padding: 12px 24px;
-  background-color: var(--primary );
+  background-color: var(--primary);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   border: none;
   color: #fff;
@@ -309,10 +311,9 @@ body {
 /* Footer */
 .footer {
   margin-top: 25vh;
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--bg2);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #e8e8e800, #e8e8e8 40%);
   color: var(--text);
-  background-color: var(--bg2);
   padding: 60px 20px 40px;
   position: relative;
 }
@@ -394,11 +395,19 @@ body {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: var(--bg2);
-    width: 30rem;
-    height: 100vh;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    width: 20rem;
+    height: 33vh;
     transition: 0.3s;
-    text-align: center;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.277);
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: aliceblue;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,  0,  0,  0.15);
   }
 
   .navbar .navbar-nav.active {
@@ -415,10 +424,11 @@ body {
 
   .navbar .navbar-nav a::after {
     transform-origin: 0, 0;
+    margin-right: 10px;
   }
 
   .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
+    transform: scaleX(0.7);
   }
 
   .about .row {
@@ -436,7 +446,7 @@ body {
 
   .about .row .content h3 {
     margin-top: 1rem;
-    font-size: 2rem
+    font-size: 2rem;
   }
 
   .about .row .content p {
