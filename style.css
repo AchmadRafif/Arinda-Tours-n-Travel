@@ -283,7 +283,7 @@ body {
 }
 
 .location .map {
-  margin: 35px;
+  margin: 25px;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
@@ -382,7 +382,7 @@ body {
   }
 }
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   html {
     font-size: 62.5%;
   }
@@ -463,6 +463,8 @@ body {
 
   .location p {
     font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .location .row .map {
@@ -475,8 +477,13 @@ body {
   }
 }
 /* Mobile Phone */
-@media (max-width: 450px) {
+@media (max-width: 665px) {
   html {
     font-size: 55%;
+  }
+
+  .location .row .map {
+    height: 30rem;
+    width: 45rem;
   }
 }
