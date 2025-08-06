@@ -28,17 +28,19 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: var(--bg2);
+  /* background-color: var(--bg2); */
   border-bottom: 1px solid var(--bg) 2;
   position: fixed;
+  max-height: 90px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+  background: linear-gradient(to top, #e8e8e800, #e8e8e8 80%);
 }
 
 .navbar img {
-  width: 100px;
+  width: 85px;
 }
 
 .navbar .navbar-nav a {
